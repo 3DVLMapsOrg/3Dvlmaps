@@ -1,7 +1,7 @@
 # 3DVLMaps: 3D Open Vocabulary Semantic Segmentation for Robot Navigation
 
 <h2>1. Introduction</h2>
-    <a href="https://vlmaps.github.io/" target="_blank">VLMaps</a> is a spatial map representation that embeds pretrained visual-language features with a 3D reconstruction and projects to a top-down 2D map. VLMaps embeds pixel-level visual features from an LSeg visual encoder to points in a point cloud. These points are then projected to a top-down navigation map where only the point with the highest height is kept. After this, the visual features are compared through cosine similarity to textual features from a CLIP text encoder to determine the semantic label of the point. Due to the top-down projection, the robot wouldn't be capable of 3D navigation such as “go to the plant below the 
+    <a href="https://vlmaps.github.io/" target="_blank">VLMaps</a> is a spatial map representation that embeds pretrained visual-language features with a 3D reconstruction and projects to a top-down 2D map. VLMaps embeds pixel-level visual features from an LSeg visual encoder to points in a point cloud. These points are then projected to a top-down navigation map where only the point with the highest height is kept. After this, the visual features are compared through cosine similarity to textual features from a CLIP text encoder to determine the semantic label of the point. Due to the top-down projection, the robot wouldn't be capable of 3D navigation such as “go to the plant below the table.” Addressing this problem was our main goal with this project. We used the <a href="https://niessner.github.io/Matterport/" target="_blank">Matterport3D Dataset</a>.
 
 
 <h2>2. Approach</h2>
@@ -23,8 +23,8 @@
         <p><em>3D Voxel Grid with Open Vocabulary Semantic Features</em></p>
     </div>
     <div style="text-align:center">
-      <img src="/media/realsofa.png" width="250" style="vertical-align: top; margin-right:20px;" />
-      <img src="/media/seg_sofa.png" width="250" style="vertical-align: top; margin-right:20px;" />
+      <img src="/media/realsofa.png" width="400" style="vertical-align: top; margin-right:20px;" />
+      <img src="/media/seg_sofa.png" width="400" style="vertical-align: top; margin-right:20px;" />
       <p><em>Sofa from MP3D Dataset vs Semantically Embedded Sofa</em></p>
     </div>
 
